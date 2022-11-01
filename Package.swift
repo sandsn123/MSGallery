@@ -24,6 +24,7 @@ let package = Package(
         .target(
             name: "Gallery",
             dependencies: [],
+            exclude: ["Extensions/Bundle+Resources.swift"],
             resources: [.process("Resources/Gallery.bundle")]),
     ]
 )

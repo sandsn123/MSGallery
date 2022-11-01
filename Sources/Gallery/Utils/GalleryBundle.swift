@@ -3,7 +3,8 @@ import UIKit
 class GalleryBundle {
 
   static func image(_ named: String) -> UIImage? {
-      return UIImage(named: "Gallery.bundle/\(named)", in: .module, compatibleWith: nil)
+      let bundle = Bundle.module
+      return UIImage(named: "Gallery.bundle/\(named)", in: bundle, compatibleWith: nil)
   }
 }
 
